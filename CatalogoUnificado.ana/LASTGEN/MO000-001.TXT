@@ -1,0 +1,40 @@
+//MO000-001.TXT ANA00000 TO ANA00001
+C_Actividad		NFI		new file
+C_Asentamiento		NFI		new file
+C_Bancos		NFI		new file
+C_Direcciones		NFI		new file
+C_Escolaridad		NFI		new file
+C_EstadoCivil		NFI		new file
+C_GrupoConsolidable		NFI		new file
+C_Nacionalidad		NFI		new file
+C_Pais		NFI		new file
+C_PersonaBSM		NFI		new file
+C_PersonaFisica		NFI		new file
+C_PersonaMoral		NFI		new file
+C_Sistema		NFI		new file
+C_Telefonos		NFI		new file
+C_TipoSangre		NFI		new file
+C_TipoTelefono		NFI		new file
+R_PersonaBanco		NFI		new file
+R_PersonaCorreoElectronico		NFI		new file
+R_PersonaDireccion		NFI		new file
+R_PersonaSistema		NFI		new file
+R_PersonaTelefono		NFI		new file
+C_Asentamiento		NWL	C_Asentamiento (IdAsentamiento) and C_Direcciones (IdAsentamiento)	New link between C_Asentamiento (IdAsentamiento) and C_Direcciones (IdAsentamiento) files
+C_Pais		NWL	C_Pais (IdPais) and C_Direcciones (IdPais)	New link between C_Pais (IdPais) and C_Direcciones (IdPais) files
+C_Actividad		NWL	C_Actividad (IdActividad) and C_PersonaFisica (IdActividad)	New link between C_Actividad (IdActividad) and C_PersonaFisica (IdActividad) files
+C_Escolaridad		NWL	C_Escolaridad (IdEscolaridad) and C_PersonaFisica (IdEstadoCivil)	New link between C_Escolaridad (IdEscolaridad) and C_PersonaFisica (IdEstadoCivil) files
+C_GrupoConsolidable		NWL	C_GrupoConsolidable (IdGrupoConsolidable) and C_PersonaFisica (IdGrupoConsolidable)	New link between C_GrupoConsolidable (IdGrupoConsolidable) and C_PersonaFisica (IdGrupoConsolidable) files
+C_Nacionalidad		NWL	C_Nacionalidad (IdNacionalidad) and C_PersonaFisica (IdNacionalidad)	New link between C_Nacionalidad (IdNacionalidad) and C_PersonaFisica (IdNacionalidad) files
+C_TipoSangre		NWL	C_TipoSangre (IdTipoSangre) and C_PersonaFisica (IdTipoSangre)	New link between C_TipoSangre (IdTipoSangre) and C_PersonaFisica (IdTipoSangre) files
+C_TipoTelefono		NWL	C_TipoTelefono (IdTipoTelefono) and C_Telefonos (IdTipoTelefono)	New link between C_TipoTelefono (IdTipoTelefono) and C_Telefonos (IdTipoTelefono) files
+C_Bancos		NWL	C_Bancos (Id_Banco) and R_PersonaBanco (IdBanco)	New link between C_Bancos (Id_Banco) and R_PersonaBanco (IdBanco) files
+C_PersonaBSM		NWL	C_PersonaBSM (IdBSM) and R_PersonaBanco (IdBSM)	New link between C_PersonaBSM (IdBSM) and R_PersonaBanco (IdBSM) files
+C_PersonaBSM		NWL	C_PersonaBSM (IdBSM) and R_PersonaCorreoElectronico (IdBSM)	New link between C_PersonaBSM (IdBSM) and R_PersonaCorreoElectronico (IdBSM) files
+C_Direcciones		NWL	C_Direcciones (IdDireccion) and R_PersonaDireccion (IdDireccion)	New link between C_Direcciones (IdDireccion) and R_PersonaDireccion (IdDireccion) files
+C_PersonaBSM		NWL	C_PersonaBSM (IdBSM) and R_PersonaDireccion (IdBSM)	New link between C_PersonaBSM (IdBSM) and R_PersonaDireccion (IdBSM) files
+C_PersonaBSM		NWL	C_PersonaBSM (IdBSM) and R_PersonaSistema (IdBSM)	New link between C_PersonaBSM (IdBSM) and R_PersonaSistema (IdBSM) files
+C_Sistema		NWL	C_Sistema (IdSistema) and R_PersonaSistema (IdSistema)	New link between C_Sistema (IdSistema) and R_PersonaSistema (IdSistema) files
+C_PersonaBSM		NWL	C_PersonaBSM (IdBSM) and R_PersonaTelefono (IdBSM)	New link between C_PersonaBSM (IdBSM) and R_PersonaTelefono (IdBSM) files
+C_Telefonos		NWL	C_Telefonos (IdTelefono) and R_PersonaTelefono (IdTelefono)	New link between C_Telefonos (IdTelefono) and R_PersonaTelefono (IdTelefono) files
+DBConexionSQLServer		CNX+		

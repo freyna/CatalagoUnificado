@@ -1,0 +1,78 @@
+//MO001-002.TXT ANA00001 TO ANA00002
+C_Actividad		NFI		new file
+C_Asentamiento		NFI		new file
+C_Bancos		NFI		new file
+C_Direcciones		NFI		new file
+C_Escolaridad		NFI		new file
+C_EstadoCivil		NFI		new file
+C_GrupoConsolidable		NFI		new file
+C_Nacionalidad		NFI		new file
+C_Pais		NFI		new file
+C_PersonaBSM		NFI		new file
+C_PersonaFisica		NFI		new file
+C_PersonaMoral		NFI		new file
+C_Sistema		NFI		new file
+C_Telefonos		NFI		new file
+C_TipoSangre		NFI		new file
+C_TipoTelefono		NFI		new file
+R_PersonaBanco		NFI		new file
+R_PersonaCorreoElectronico		NFI		new file
+R_PersonaDireccion		NFI		new file
+R_PersonaSistema		NFI		new file
+R_PersonaTelefono		NFI		new file
+sysdiagrams		NFI		new file
+sysdiagrams		FIC-	C_Actividad	C_Actividad file deleted
+sysdiagrams		FIC-	C_Asentamiento	C_Asentamiento file deleted
+sysdiagrams		FIC-	C_Bancos	C_Bancos file deleted
+sysdiagrams		FIC-	C_Direcciones	C_Direcciones file deleted
+sysdiagrams		FIC-	C_Escolaridad	C_Escolaridad file deleted
+sysdiagrams		FIC-	C_EstadoCivil	C_EstadoCivil file deleted
+sysdiagrams		FIC-	C_GrupoConsolidable	C_GrupoConsolidable file deleted
+sysdiagrams		FIC-	C_Nacionalidad	C_Nacionalidad file deleted
+sysdiagrams		FIC-	C_Pais	C_Pais file deleted
+sysdiagrams		FIC-	C_PersonaBSM	C_PersonaBSM file deleted
+sysdiagrams		FIC-	C_PersonaFisica	C_PersonaFisica file deleted
+sysdiagrams		FIC-	C_PersonaMoral	C_PersonaMoral file deleted
+sysdiagrams		FIC-	C_Sistema	C_Sistema file deleted
+sysdiagrams		FIC-	C_Telefonos	C_Telefonos file deleted
+sysdiagrams		FIC-	C_TipoSangre	C_TipoSangre file deleted
+sysdiagrams		FIC-	C_TipoTelefono	C_TipoTelefono file deleted
+sysdiagrams		FIC-	R_PersonaBanco	R_PersonaBanco file deleted
+sysdiagrams		FIC-	R_PersonaCorreoElectronico	R_PersonaCorreoElectronico file deleted
+sysdiagrams		FIC-	R_PersonaDireccion	R_PersonaDireccion file deleted
+sysdiagrams		FIC-	R_PersonaSistema	R_PersonaSistema file deleted
+sysdiagrams		FIC-	R_PersonaTelefono	R_PersonaTelefono file deleted
+C_Escolaridad		NWL	C_Escolaridad (IdEscolaridad) and C_PersonaFisica (IdEstadoCivil)	New link between C_Escolaridad (IdEscolaridad) and C_PersonaFisica (IdEstadoCivil) files
+C_GrupoConsolidable		NWL	C_GrupoConsolidable (IdGrupoConsolidable) and C_PersonaFisica (IdGrupoConsolidable)	New link between C_GrupoConsolidable (IdGrupoConsolidable) and C_PersonaFisica (IdGrupoConsolidable) files
+C_Actividad		NWL	C_Actividad (IdActividad) and C_PersonaFisica (IdActividad)	New link between C_Actividad (IdActividad) and C_PersonaFisica (IdActividad) files
+C_Pais		NWL	C_Pais (IdPais) and C_Direcciones (IdPais)	New link between C_Pais (IdPais) and C_Direcciones (IdPais) files
+C_Asentamiento		NWL	C_Asentamiento (IdAsentamiento) and C_Direcciones (IdAsentamiento)	New link between C_Asentamiento (IdAsentamiento) and C_Direcciones (IdAsentamiento) files
+C_Nacionalidad		NWL	C_Nacionalidad (IdNacionalidad) and C_PersonaFisica (IdNacionalidad)	New link between C_Nacionalidad (IdNacionalidad) and C_PersonaFisica (IdNacionalidad) files
+C_TipoSangre		NWL	C_TipoSangre (IdTipoSangre) and C_PersonaFisica (IdTipoSangre)	New link between C_TipoSangre (IdTipoSangre) and C_PersonaFisica (IdTipoSangre) files
+C_TipoTelefono		NWL	C_TipoTelefono (IdTipoTelefono) and C_Telefonos (IdTipoTelefono)	New link between C_TipoTelefono (IdTipoTelefono) and C_Telefonos (IdTipoTelefono) files
+C_Bancos		NWL	C_Bancos (Id_Banco) and R_PersonaBanco (IdBanco)	New link between C_Bancos (Id_Banco) and R_PersonaBanco (IdBanco) files
+C_PersonaBSM		NWL	C_PersonaBSM (IdBSM) and R_PersonaBanco (IdBSM)	New link between C_PersonaBSM (IdBSM) and R_PersonaBanco (IdBSM) files
+C_PersonaBSM		NWL	C_PersonaBSM (IdBSM) and R_PersonaCorreoElectronico (IdBSM)	New link between C_PersonaBSM (IdBSM) and R_PersonaCorreoElectronico (IdBSM) files
+C_Direcciones		NWL	C_Direcciones (IdDireccion) and R_PersonaDireccion (IdDireccion)	New link between C_Direcciones (IdDireccion) and R_PersonaDireccion (IdDireccion) files
+C_PersonaBSM		NWL	C_PersonaBSM (IdBSM) and R_PersonaDireccion (IdBSM)	New link between C_PersonaBSM (IdBSM) and R_PersonaDireccion (IdBSM) files
+C_PersonaBSM		NWL	C_PersonaBSM (IdBSM) and R_PersonaSistema (IdBSM)	New link between C_PersonaBSM (IdBSM) and R_PersonaSistema (IdBSM) files
+C_Sistema		NWL	C_Sistema (IdSistema) and R_PersonaSistema (IdSistema)	New link between C_Sistema (IdSistema) and R_PersonaSistema (IdSistema) files
+C_PersonaBSM		NWL	C_PersonaBSM (IdBSM) and R_PersonaTelefono (IdBSM)	New link between C_PersonaBSM (IdBSM) and R_PersonaTelefono (IdBSM) files
+C_Telefonos		NWL	C_Telefonos (IdTelefono) and R_PersonaTelefono (IdTelefono)	New link between C_Telefonos (IdTelefono) and R_PersonaTelefono (IdTelefono) files
+C_Asentamiento		DEL	C_Asentamiento (IdAsentamiento) and C_Direcciones (IdAsentamiento)	Link deleted between C_Asentamiento (IdAsentamiento) and C_Direcciones (IdAsentamiento) files
+C_Pais		DEL	C_Pais (IdPais) and C_Direcciones (IdPais)	Link deleted between C_Pais (IdPais) and C_Direcciones (IdPais) files
+C_Actividad		DEL	C_Actividad (IdActividad) and C_PersonaFisica (IdActividad)	Link deleted between C_Actividad (IdActividad) and C_PersonaFisica (IdActividad) files
+C_Escolaridad		DEL	C_Escolaridad (IdEscolaridad) and C_PersonaFisica (IdEstadoCivil)	Link deleted between C_Escolaridad (IdEscolaridad) and C_PersonaFisica (IdEstadoCivil) files
+C_GrupoConsolidable		DEL	C_GrupoConsolidable (IdGrupoConsolidable) and C_PersonaFisica (IdGrupoConsolidable)	Link deleted between C_GrupoConsolidable (IdGrupoConsolidable) and C_PersonaFisica (IdGrupoConsolidable) files
+C_Nacionalidad		DEL	C_Nacionalidad (IdNacionalidad) and C_PersonaFisica (IdNacionalidad)	Link deleted between C_Nacionalidad (IdNacionalidad) and C_PersonaFisica (IdNacionalidad) files
+C_TipoSangre		DEL	C_TipoSangre (IdTipoSangre) and C_PersonaFisica (IdTipoSangre)	Link deleted between C_TipoSangre (IdTipoSangre) and C_PersonaFisica (IdTipoSangre) files
+C_TipoTelefono		DEL	C_TipoTelefono (IdTipoTelefono) and C_Telefonos (IdTipoTelefono)	Link deleted between C_TipoTelefono (IdTipoTelefono) and C_Telefonos (IdTipoTelefono) files
+C_Bancos		DEL	C_Bancos (Id_Banco) and R_PersonaBanco (IdBanco)	Link deleted between C_Bancos (Id_Banco) and R_PersonaBanco (IdBanco) files
+C_PersonaBSM		DEL	C_PersonaBSM (IdBSM) and R_PersonaBanco (IdBSM)	Link deleted between C_PersonaBSM (IdBSM) and R_PersonaBanco (IdBSM) files
+C_PersonaBSM		DEL	C_PersonaBSM (IdBSM) and R_PersonaCorreoElectronico (IdBSM)	Link deleted between C_PersonaBSM (IdBSM) and R_PersonaCorreoElectronico (IdBSM) files
+C_Direcciones		DEL	C_Direcciones (IdDireccion) and R_PersonaDireccion (IdDireccion)	Link deleted between C_Direcciones (IdDireccion) and R_PersonaDireccion (IdDireccion) files
+C_PersonaBSM		DEL	C_PersonaBSM (IdBSM) and R_PersonaDireccion (IdBSM)	Link deleted between C_PersonaBSM (IdBSM) and R_PersonaDireccion (IdBSM) files
+C_PersonaBSM		DEL	C_PersonaBSM (IdBSM) and R_PersonaSistema (IdBSM)	Link deleted between C_PersonaBSM (IdBSM) and R_PersonaSistema (IdBSM) files
+C_Sistema		DEL	C_Sistema (IdSistema) and R_PersonaSistema (IdSistema)	Link deleted between C_Sistema (IdSistema) and R_PersonaSistema (IdSistema) files
+C_PersonaBSM		DEL	C_PersonaBSM (IdBSM) and R_PersonaTelefono (IdBSM)	Link deleted between C_PersonaBSM (IdBSM) and R_PersonaTelefono (IdBSM) files
+C_Telefonos		DEL	C_Telefonos (IdTelefono) and R_PersonaTelefono (IdTelefono)	Link deleted between C_Telefonos (IdTelefono) and R_PersonaTelefono (IdTelefono) files
